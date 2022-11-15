@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(https://www.teknofilo.com/wp-content/uploads/2017/01/Minimalist-smartphone-wallpapers_021.jpg);   
+    background-size: cover;
+    background-position: cover;
+    font-family: sans-serif;
+}
+button{
+    padding: 10px;
+    margin: 10px;
+    
+    left: 10px;
+    top: 10px;
+    background-color: burlywood;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+}
+#recuadro{
+    width: 90%;
+    border: 1px solid black;
+    margin: 100px auto 0px;
+}
+img{
+   width: 200px;
+   margin: 20px;
+   border-radius: 3px;
+   height: 200px;
+   object-fit: cover;
+}

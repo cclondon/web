@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  *:focus{
+    outline: none;
+  }
+  
+  body{
+    font: 20px 'SF Pro Display', Roboto, sans-serif;
+    background: lightgrey;
+  }
+  /*** Smartphone Mockup
+  /*********************/
+  #app{
+    position: relative;
+    background: #eee;
+    width: 399px;
+    height: 812px; 
+    margin: 2rem auto;
+    border: 12px solid black;
+    border-radius: 32px;
+    padding: 0 1rem;
+  }
+  
+  #app:before{
+    content: "";
+    background: black;
+    border-radius: 0 0 20px 20px;
+    width: 201px;
+    height: 32px;
+    position: absolute;
+    top: 0px;
+    left: 87px;
+  }
+  
+  .box{
+    border-radius: 21px;
+    border: 1px solid #333;
+    background: #eee;
+    margin: 1rem .3rem;
+  }
+  
+  #result{
+    height: 120px;
+    width: 90%;
+    border-radius: 12px;
+    border: 2px solid coral;
+  }
+  
+  #resultValue{
+    margin: 10px 0;
+  }
+  
+  #resultIconCheck, #resultIconExcl{
+    display: none;
+    font-size: 2rem;
+  }
+  
+  #resultIconCheck{
+    color: lightgreen;
+  }
+  
+  #resultIconExcl{
+    color: rgb(255, 51, 51);
+  }
+  
+  .selected{
+    border: none;
+    box-shadow: 6px 6px 6px rgb(51,51,51,.6), -6px -6px 6px white;
+  }
+  
+  .colored{
+    color: coral;
+  }
+  
+  #male p, #female p{
+    margin: 1rem;
+  }
+  
+  #male i, #female i{
+    font-size: 2rem;
+    margin: 1rem;
+  }
+  
+  #age.box{
+    margin: 0 auto;
+  }
+  
+  #age p{
+    margin: 1rem;
+  }
+  
+  .slider{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 80%;
+    height: 4px;
+    background: #333;
+    margin: 1rem;
+  }
+  
+  .slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 32px;
+    height: 32px;
+    background: coral;
+    border-radius: 50%;
+  }
+  
+  .slider::-moz-range-thumb{
+    width: 32px;
+    height: 32px;
+    background: coral;
+    border-radius: 50%;
+  }
+  
+  
+  div{
+    width: 90%;
+    text-align: center;
+    margin: .5rem auto;
+  }
+  
+  h1{
+    text-align: center;
+    margin-top: 42px;
+  }
+  
+  .flex{
+    display: flex;
+  }
+  
+  .btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    font-size: 1rem;
+    background: #333;
+    color: #eee;
+  }
+  
+  .btn:active{
+    background: coral;
+  }
+  
+  #calcBtn{
+    background: coral;
+    width: 100%;
+    height: 64px;
+    border-radius: 21px;
+    font-size: 1.3rem;
+  }
+  

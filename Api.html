@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imagenes Random de Perros</title>
+    <link rel="stylesheet" href="css/api.css" />
+  </head>
+  <body>
+    <button type="button" id="refrescar">Cargar Mas</button>
+    <button>
+      <a href="index.html" style="text-decoration: none; color: white"
+        >Volver</a
+      >
+    </button>
+    <div id="recuadro"></div>
+
+    <script>
+      let url = "https://dog.ceo/api/breeds/image/random";
+      let btn = document.getElementById("refrescar");
+      let recuadro = document.getElementById("recuadro");
+      btn.addEventListener("click", () => {
+        fetch(url)
+          .then((data) => data.json())
+          .then((data) => {
+            if (data.status == "success") {
+              recuadro.insertAdjacentHTML(
+                "beforeend",
+                `<img src="${data.message}" >`
+              );
+            } else {
+              alert("Algo anda mal :c");
+            }
+          })
+          .catch((err) => console.log(err));
+      });
+    </script>
+  </body>
+</html>
